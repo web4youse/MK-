@@ -11,28 +11,118 @@
 
 
 <style>
-.bmr-calculator{
-    width: 400px;
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        background-color: #fff;
-        transform: translate(-50%, -50%);
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 1px 1px 20px #555;
-}
-.bmr-calculator,
-.bmr-calculator * {
-    box-sizing: border-box;
-}
-.bmr-calculator h2{
-    text-align: center;
-    font-size: 30px;
-
-    font-weight: 600;
-    margin: -8px -24px 8px;
-    padding: 16px;
+       body {
+           margin: 0;
+           padding: 0;
+           font-family: sans-serif;
+       }
+       .header {
+           background-color: #333;
+           color: #fff;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 10px;
+       }
+       .header h1 {
+           margin: 0;
+       }
+       .nav {
+           display: flex;
+           gap: 20px;
+           list-style: none;
+           margin: 0;
+       }
+       .nav a {
+           text-decoration: none;
+           color: #fff;
+           padding: 10px;
+           display: block;
+       }
+       .bmr-calculator {
+           width: 100%;
+           max-width: 400px;
+           margin: 50px auto;
+           background-color: #fff;
+           padding: 10px;
+           border-radius: 10px;
+           box-shadow: 1px 1px 20px #555;
+           box-sizing: border-box;
+       }
+       .bmr-calculator h2 {
+           text-align: center;
+           font-size: 30px;
+           font-weight: 600;
+           margin: -8px -24px 8px;
+           padding: 16px;
+       }
+       .formBmr h3 {
+           font-size: 15px;
+           text-transform: uppercase;
+           margin: 16px 0 10px 0;
+       }
+       .formBmr input[type="text"] {
+           width: 100%;
+           padding: 4px 16px;
+           font-size: 24px;
+           font-weight: bold;
+           border: 1px solid #d5dbdb;
+           box-sizing: border-box;
+       }
+       .formBmr {
+           display: flex;
+           flex-direction: column;
+           gap: 4px;
+       }
+       #female {
+           margin-left: 20px;
+       }
+       .height,
+       .weight {
+           position: relative;
+       }
+       .unit {
+           position: absolute;
+           right: 20px;
+           top: 50px;
+           color:  #777;
+       }
+       .calculate-btn {
+           padding: 8px 24px;
+           margin: 16px 0;
+           font-size: 18px;
+           font-weight: 100;
+           text-transform: uppercase;
+           border: none;
+           background: #333;
+           color: #fff;
+           cursor: pointer;
+           margin-bottom: 32px;
+       }
+       .resultBmr {
+           text-align: center;
+           color: #4e4e4e;
+           font-size: 18px;
+       }
+       .resultBmr .calories {
+           color: green;
+           font-size: 38px;
+           font-weight: 900;
+           margin-right: 8px;
+           vertical-align: middle;
+       }
+       .list-itens {
+           display:flex;
+           list-style: none;
+           gap: 13px;
+           margin: 0;
+           padding: 0;
+       }
+       .list-itens a {
+           text-decoration: none;
+           color: white;
+           padding: 10px;
+       }
 }
 .bmr-calculator .formBmr h3{
     font-size: 15px;
@@ -128,10 +218,10 @@ transition: transform .2s ease-in;
       <nav class="header-menu">
           <ul class="list-itens">
               <li><a href="../index.html">Home</a></li>
-              <li><a href="services.html">Results</a></li>
-              <li><a href="contact.html">Schedule</a></li>
-              <li><a href="bmr.html">Percentage</a></li>
-              <li><a href="bmro.html">BMR</a></li>
+              <li><a href="services.html"></a></li>
+              <li><a href="contact.html"></a></li>
+              <li><a href="bmr.html"></a></li>
+              <li><a href="bmro.html"></a></li>
 
 
 
