@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK Hamza BMR</title>
+</head>
+
+
+
+
+<style>
+.bmr-calculator{
+    width: 500px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        background-color: #fff;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px #555;
+}
+.bmr-calculator,
+.bmr-calculator * {
+    box-sizing: border-box;
+}
+.bmr-calculator h2{
+    text-align: center;
+    font-size: 30px;
+
+    font-weight: 600;
+    margin: -8px -24px 8px;
+    padding: 16px;
+}
+.bmr-calculator .formBmr h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 16px 0 10px 0;
+}
+.bmr-calculator .formBmr input[type="text"]{
+    width: 100%;
+    padding: 4px 16px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid #d5dbdb;
+}
+.bmr-calculator .formBmr {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.bmr-calculator .formBmr  #female{
+    margin-left: 20px;
+}
+.bmr-calculator .formBmr  .height,
+.bmr-calculator .formBmr  .weight{
+    position: relative;
+}
+.bmr-calculator .formBmr  .unit{
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    color:  #777;
+}
+.bmr-calculator .resultBmr .calculate-btn{
+    padding: 8px 24px;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+.bmr-calculator .resultBmr{
+    text-align: center;
+    color: #4e4e4e;
+    font-size: 18px;
+}
+.bmr-calculator .resultBmr .calories{
+    color: green;
+    font-size: 38px;
+    font-weight: 900;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+</style>
+<link rel="stylesheet" href="../styles/services.css">
+<link rel="stylesheet" href="../media.css">
+<body>
+   <header>
+      <div class="logo">
+          <a href="../index.html"><img src="../img/logo.png" alt="Logo Luan Pessoa"></a>
+          </div>
+      <nav class="header-menu">
+          <ul class="list-itens">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="services.html">Results</a></li>
+              <li><a href="contact.html">Schedule</a></li>
+              <li><a href="bmr.html">Percentage</a></li>
+              <li><a href="bmro.html">BMR</a></li>
+
+
+
+          </ul>
+      </nav>
+
+  </header>
+
+    <div class="bmr-calculator">
+        <h2>احسب سعراتك</h2>
+        <div class="controls">
+            <form class="formBmr">
+                <h3>Age</h3>
+                <input type="text" id="age" value="27">
+                <div class="gender">
+                    <h3>Gender</h3>
+                    <input type="radio" id="male" value="female" name="gender" checked>
+                    <label for="male">Female</label>
+                    <input type="radio" id="male" value="male" name="gender">
+                    <label for="male">Male</label>
+                </div>
+                <div class="height">
+                    <h3>Height</h3>
+                    <input type="text" id="height" value="170">
+                    <div class="unit">cm</div>
+                </div>
+                <div class="weight">
+                    <h3>Weight</h3>
+                    <input type="text" id="weight" value="63">
+                    <div class="unit">kg</div>
+                </div>
+            </form>
+        </div>
+        <div class="resultBmr">
+            <button class="calculate-btn">Calculate</button>
+            <div class="result-message">
+                <span class="calories">1,400 </span>
+                Calories/day
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        const calories = document.querySelector(".bmr-calculator .resultBmr .calories");
+        const calculateBtn = document.querySelector('.bmr-calculator .resultBmr .calculate-btn');
+        const age = document.querySelector('.bmr-calculator .formBmr  #age');
+        const height = document.querySelector('.bmr-calculator .formBmr  #height');
+        const weight = document.querySelector('.bmr-calculator .formBmr  #weight');
+         //BMR = 10*weight + 6.25*height -5*age + 5
+        //BMR = 10*weight + 6.25*height - 5*age -161
+
+        const calculateBMR = (weight,height,age,gender) =>{
+            if(gender == "male"){
+                return 10*weight + 6.25*height -5*age + 5;
+            }
+            return 10*weight + 6.25*height - 5*age -161;
+        };
+        calculateBtn.addEventListener("click", () => {
+            let genderValue = document.querySelector(".bmr-calculator .formBmr input[name='gender']:checked").value;
+            let BMR = calculateBMR(weight.value,height.value,age.value,genderValue);
+
+            calories.innerHTML = BMR.toLocaleString("en-US");
+        });
+
+    </script>
+
+
+    
+</body>
+
+</html>
