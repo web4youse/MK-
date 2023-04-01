@@ -111,19 +111,7 @@
            margin-right: 8px;
            vertical-align: middle;
        }
-       .list-itens {
-           display:flex;
-           list-style: none;
-           gap: 13px;
-           margin: 0;
-           padding: 0;
-       }
-       .list-itens a {
-           text-decoration: none;
-           color: white;
-           padding: 10px;
-       }
-}
+
 .bmr-calculator .formBmr h3{
     font-size: 15px;
     text-transform: uppercase;
@@ -178,38 +166,55 @@
     margin-right: 8px;
     vertical-align: middle;
 }
-.list-itens{
-    display:flex;
-    list-style: none;
-    gap: 13px;
-}
-
-.list-itens a{
-    text-decoration: none;
-    color: white;
-}
-
-.list-itens a:hover{
-    color:#fccd14;
-    transition: 0.3s all;
-}
-
-.list-itens li{
-transition: transform .2s ease-in;
-}
-
-.list-itens li:hover{
-    transform:scale(1);
-}
-
 .header-menu {
-    height:100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-right:190px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
+
+.list-itens {
+  display: flex;
+  list-style: none;
+  gap: 13px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.list-itens a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.list-itens a:hover {
+  color: #fccd14;
+  transition: 0.3s all;
+}
+
+.list-itens li {
+  transition: transform .2s ease-in;
+}
+
+.list-itens li:hover {
+  transform: scale(1);
+}
+
+@media (max-width: 767px) {
+  .header-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 0;
+  }
+  .list-itens {
+    gap: 8px;
+  }
+}
+
 
 
 
@@ -230,7 +235,8 @@ transition: transform .2s ease-in;
               <li><a href="../index.html">Home</a></li>
               <li><a href="services.html">Results</a></li>
               <li><a href="contact.html">Schedule</a></li>
-              <li><a href="bmr.html"></a>Percentage</li>
+                <li><a href="bmr.html">Percentage</a></li>
+
               <li><a href="bmro.html"></a> </li>
 
 
