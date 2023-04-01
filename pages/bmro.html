@@ -12,13 +12,13 @@
 
 <style>
 .bmr-calculator{
-    width: 500px;
+    width: 400px;
         position: absolute;
-        top: 60%;
+        top: 65%;
         left: 50%;
         background-color: #fff;
         transform: translate(-50%, -50%);
-        padding: 20px;
+        padding: 10px;
         border-radius: 10px;
         box-shadow: 1px 1px 20px #555;
 }
@@ -87,6 +87,29 @@
     font-weight: 900;
     margin-right: 8px;
     vertical-align: middle;
+}
+.list-itens{
+    display:flex;
+    list-style: none;
+    gap: 13px;
+}
+
+.list-itens a{
+    text-decoration: none;
+    color: white;
+}
+
+.list-itens a:hover{
+    color:#fccd14;
+    transition: 0.3s all;
+}
+
+.list-itens li{
+transition: transform .2s ease-in;
+}
+
+.list-itens li:hover{
+    transform:scale(1);
 }
 
 
@@ -178,7 +201,7 @@
     </script>
 
 
-    
+
 </body>
 
 </html>
