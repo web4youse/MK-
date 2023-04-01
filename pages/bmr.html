@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="../index.css">
-  <link rel="stylesheet" href="../contact.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,377 +8,290 @@
 </head>
 
 
-<header>
-  <div class="logo">
-      <a href="../index.html"><img src="../img/logo.png" alt="Logo Luan Pessoa"></a>
-      </div>
-  <nav class="header-menu">
-      <ul class="list-itens">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="services.html">Results</a></li>
-          <li><a href="contact.html">Schedule</a></li>
-          <li><a href="bmr.html">Percentage</a></li>
-            <li><a href="bmro.html">BMR</a></li>
-
-
-      </ul>
-  </nav>
-
-</header>
-
-<section class="contact">
-
-    <div class="area-form">
-        <div class="table">
-          <p>طريقة استخدام الاداة</p>
-
-            <p>إذا كنت ترغب بالتضخيم يفضل اختيار 20% دهون، و 30% بروتين و 50% كاربوهيدرات</p>
-                <p>اذا كنت ترغب في التنشيف  يفضل اختيار 20% دهون و 50% بروتين و 30% كاربوهيدرات</p>
-                <p>واذا كنت تريد الحفاظ على وزنك يفضل اختيار 20% دهون و 40% بروتين و 40% كاربوهيدرات</p>
-
-
-        </section>
-
-
-
-
-            <script type='text/javascript' async="async" data-noptimize="1" data-cfasync="false" src='https://scripts.mediavine.com/tags/bahaaeddin.js?ver=6.2' id='mv-script-wrapper-js'></script>
-            <script type="text/javascript" id="ga/js-js" class="mv-trellis-script" src="https://www.googletagmanager.com/gtag/js?id=UA-1067578-29" defer data-noptimize data-handle="ga/js"></script>
-            <link rel="https://api.w.org/" href="https://drbillsukala.com/wp-json/" />
-            <link rel="alternate" type="application/json" href="https://drbillsukala.com/wp-json/wp/v2/posts/2673" />
-            <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://drbillsukala.com/xmlrpc.php?rsd" />
-            <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://drbillsukala.com/wp-includes/wlwmanifest.xml" />
-            <meta name="generator" content="WordPress 6.2" />
-            <link rel='shortlink' href='https://drbillsukala.com/?p=2673' />
-            <link rel="alternate" type="application/json+oembed" href="https://drbillsukala.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdrbillsukala.com%2Fmacronutrient-calorie-gram-calculator%2F" />
-            <link rel="alternate" type="text/xml+oembed" href="https://drbillsukala.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdrbillsukala.com%2Fmacronutrient-calorie-gram-calculator%2F&#038;format=xml" />
-            <script type="text/javascript">
-                /* Do not copy any part of this script without permission; Dr Bill Sukala */
-                function calc(form) {
-                    var C, P, F
-
-                    C = form.Carbohydrate.options[form.Carbohydrate.selectedIndex].value
-                    P = form.Protein.options[form.Protein.selectedIndex].value
-                    F = form.Fat.options[form.Fat.selectedIndex].value
-
-                    if (+P + +F + +C !== 1) {
-                        alert('The sum of carb, protein, and fat must equal 100%');
-                    }
-
-                    form.CarbCalories.value = C * form.CalorieIntake.value
-                    form.ProteinCalories.value = P * form.CalorieIntake.value
-                    form.FatCalories.value = F * form.CalorieIntake.value
-
-                    form.CarbGrams.value = Math.round((C * form.CalorieIntake.value) / 4)
-                    form.ProteinGrams.value = Math.round((P * form.CalorieIntake.value) / 4)
-                    form.FatGrams.value = Math.round((F * form.CalorieIntake.value) / 9)
-
-                }
-            </script>
-
-
-
-
-
-                                <form>
-                                    <div class="wrapper-calories">
-                                        <div id="column-one">
-                                            <h3 id="calculator-h3">أدخل إجمالي السعرات الحرارية اليومية</h3>
-                                            <p style="margin-bottom: 32px;">
-                                                <input name="CalorieIntake" type="text" size="7" placeholder="Enter your calories here" class="calorie-field-style">
-                                            </p>
-                                            <h3 id="calculator-h3">حدد النسب المئوية المطلوبة من المغذيات الكبيرة</h3>
-                                            <p>
-                                                <select name="Carbohydrate" class="style-selector">
-        <option value="0.05">5%</option>
-        <option value="0.10">10%</option>
-        <option value="0.15">15%</option>
-        <option value="0.20">20%</option>
-        <option value="0.25">25%</option>
-        <option value="0.30">30%</option>
-        <option value="0.35">35%</option>
-        <option value="0.40">40%</option>
-        <option value="0.45">45%</option>
-        <option value="0.50">50%</option>
-        <option value="0.55" selected>55%</option>
-        <option value="0.60">60%</option>
-        <option value="0.65">65%</option>
-        <option value="0.70">70%</option>
-        <option value="0.75">75%</option>
-      </select> Carbohydrate/كربوهيدرات
-                                            </p>
-                                            <p>
-                                                <select name="Protein" class="style-selector">
-        <option value="0.05">5%</option>
-        <option value="0.10">10%</option>
-        <option value="0.15" selected>15%</option>
-        <option value="0.20">20%</option>
-        <option value="0.25">25%</option>
-        <option value="0.30">30%</option>
-        <option value="0.35">35%</option>
-        <option value="0.40">40%</option>
-        <option value="0.45">45%</option>
-        <option value="0.50">50%</option>
-        <option value="0.55">55%</option>
-        <option value="0.60">60%</option>
-        <option value="0.65">65%</option>
-        <option value="0.70">70%</option>
-        <option value="0.75">75%</option>
-        <option value="0.80">80%</option>
-      </select> Protein/بروتين
-                                            </p>
-                                            <p style="margin-bottom: 5px !important;">
-                                                <select name="Fat" class="style-selector">
-        <option value="0.05">5%</option>
-        <option value="0.10">10%</option>
-        <option value="0.15">15%</option>
-        <option value="0.20">20%</option>
-        <option value="0.25">25%</option>
-        <option value="0.30" selected>30%</option>
-        <option value="0.35">35%</option>
-        <option value="0.40">40%</option>
-        <option value="0.45">45%</option>
-        <option value="0.50">50%</option>
-        <option value="0.55">55%</option>
-        <option value="0.60">60%</option>
-        <option value="0.65">65%</option>
-        <option value="0.70">70%</option>
-        <option value="0.75">75%</option>
-        <option value="0.80">80%</option>
-        <option value="0.85">85%</option>
-        <option value="0.90">90%</option>
-      </select> Fat/الدهون
-                                            </p>
-                                            <div id="outer">
-                                                <div class="inner">
-                                                    <input type="button" value="Calculate" class="CalculateButton" onclick="calc(this.form)">
-                                                </div>
-                                                <div class="inner">
-                                                    <input type="reset" value="Reset" name="Reset" class="ResetButton">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="column-two">
-                                            <h3 id="calculator-h3">السعرات الحرارية من كل عنصر غذائي كبير</h3>
-                                            <p style="margin-bottom: 3px;">
-                                                <input name="CarbCalories" type="text" size="7" class="calorie-results-field" placeholder="Carb calories"> Carbohydrate/كربوهيدرات</p>
-                                            <p style="margin-bottom: 3px;"><input name="ProteinCalories" type="text" size="7" class="calorie-results-field" placeholder="Protein calories"> Protein/بروتين</p>
-                                            <p style="margin-bottom: 3px;"><input name="FatCalories" type="text" size="7" class="calorie-results-field" placeholder="Fat calories"> Fat/الدهون
-
-</p>
-                                            <h3 id="calculator-h3">جرامات من كل مغذٍّ كبير المقدار</h3>
-                                            <p style="margin-bottom: 3px;"><input name="CarbGrams" type="text" size="7" class="grams-results-field" placeholder="Carb grams"> Carbohydrate/كربوهيدرات(g)</p>
-                                            <p style="margin-bottom: 3px;"><input name="ProteinGrams" type="text" size="7" class="grams-results-field" placeholder="Protein grams"> Protein/بروتين(g)</p>
-                                            <p style="margin-bottom: 3px;"><input name="FatGrams" type="text" size="7" class="grams-results-field" placeholder="Fat grams"> Fat/الدهون(g)</p>
-                                        </div>
-                                    </div>
-                                </form>
-
-
-
-                                <style>
-
-                                    .wrapper-calories {
-                                        border: 4px solid #eee;
-                                        border-radius: 10px;
-                                        overflow: hidden;
-                                        margin-top: 20px;
-                                        margin-bottom: 20px;
-                                    }
-
-                                    .wrapper-calories div {
-                                        min-height: auto;
-                                        padding: 10px;
-                                    }
-
-                                    #column-one {
-                                        float: left;
-                                        margin-right: 5px;
-                                        width: 50%;
-                                    }
-
-                                    #column-two {
-                                        overflow: hidden;
-                                        border-left: 1px solid #eee;
-                                    }
-
-                                    @media screen and (max-width: 768px) {
-                                        #column-one {
-                                            float: none;
-                                            margin-right: 0;
-                                            width: auto;
-                                            border: 0;
-                                            border-bottom: 1px solid #eee;
-                                        }
-                                    }
-
-                                    #calculator-h3 {
-                                        font-size: 20px;
-                                        font-weight: 500;
-                                        background-color: #888888;
-                                        color: #red;
-                                        padding-top: 5px;
-                                        padding-bottom: 5px;
-                                        border-radius: 3px;
-                                        padding-left: 10px;
-                                    }
-
-                                    #calculator-text {
-                                        font-size: 14px;
-                                        line-height: 1.3;
-                                    }
-
-                                    #calculator-list-text {
-                                        font-size: 12px;
-                                        line-height: 1.3;
-                                    }
-
-                                    /* Units selectors style */
-
-                                    select.style-selector {
-                                        font-size: 17px;
-                                        width: 45%;
-                                        height: 45px;
-                                        margin-bottom: 3px;
-                                    }
-
-                                    /* Calorie input field styling */
-
-                                    input.calorie-field-style[type="text"] {
-                                        padding: .7em;
-                                        width: 75%
-                                    }
-
-                                    .list-itens{
-                                        display:flex;
-                                        list-style: none;
-                                        gap: 13px;
-                                    }
-
-                                    .list-itens a{
-                                        text-decoration: none;
-                                        color: white;
-                                    }
-
-                                    .list-itens a:hover{
-                                        color:#fccd14;
-                                        transition: 0.3s all;
-                                    }
-
-                                    .list-itens li{
-                                    transition: transform .2s ease-in;
-                                    }
-
-                                    .list-itens li:hover{
-                                        transform:scale(1);
-                                    }
-
-                                    /* Calorie results field styling */
-
-                                    input.calorie-results-field[type="text"] {
-                                        padding: .7em;
-                                        width: 45%
-                                    }
-
-                                    /* Grams field styling */
-
-                                    input.grams-results-field[type="text"] {
-                                        padding: .7em;
-                                        width: 45%
-                                    }
-
-
-                                    .area-form{
-                                        display: flex;
-                                        flex-direction: row;
-                                        justify-content: center;
-                                        align-items: center;
-                                        margin-top: 20px;
-                                        gap: 100px;
-
-                                      }
-
-                                    /* Calculate Buttons - inline  */
-
-                                    .table{
-                                        box-shadow: 0px 1px 5px #888888;
-                                        border-radius: 10px;
-                                        transition: transform .2s;
-                                    }
-
-                                    .table:hover{
-                                        transform:scale(1);
-                                    }
-
-                                    .table table{
-                                        border-collapse: collapse;
-                                        width: 80%;
-                                    }
-
-                                    .table p{
-                                        text-align: center;
-                                        font-size: 1.2rem;
-                                        padding: 10px;
-                                        background: #000000;
-                                        color: white;
-                                        border-radius: 10px 10px 0 0;
-                                    }
-                                    #outer {
-                                        width: 100%;
-                                        text-align: left;
-                                        margin-top: 20px;
-                                        margin-bottom: 20px;
-                                        padding-left: 0px;
-                                    }
-
-                                    .inner {
-                                        display: inline-block;
-                                    }
-
-                                    /* Calculate Buttons - styling  */
-
-                                    input[type="button"].CalculateButton {
-                                        font-size: 16px !important;
-                                        background: #black;
-                                        border: none;
-                                        color:black;
-                                        border-radius: 5px;
-                                        padding: 15px 15px 16px 15px;
-                                        -webkit-appearance: none;
-                                    }
-
-                                    input[type="reset"].ResetButton {
-                                        font-size: 16px !important;
-                                        padding-top: 11px !important;
-                                        padding-bottom: 12px !important;
-                                        padding: 15px 22px 16px 22px;
-                                        background: #black;
-                                        -webkit-appearance: none;
-                                    }
-
-                                    @media screen and (max-width: 768px) {
-                                        ::-webkit-input-placeholder {
-                                            /* Edge */
-                                            font-size: 15px;
-                                        }
-                                        :-ms-input-placeholder {
-                                            /* Internet Explorer 10-11 */
-                                            font-size: 15px;
-                                        }
-                                        ::placeholder {
-                                            font-size: 15px;
-                                        }
-                                    }
-                                  </style>
-                                </body>
-                                <footer>
-                                    <div class="footer">
-
-                                        <p>© 2023  | جميع الحقوق محفوظه | تم تطوير الموقع عن طريق مطور المواقع بهاء الدين</p>
-                                        </div>
-
-                                </footer>
-                                <script src="../js/script.js"></script>
-
-
-                              </html>
+
+
+<style>
+       body {
+           margin: 0;
+           padding: 0;
+           font-family: sans-serif;
+       }
+       .header {
+           background-color: #333;
+           color: #fff;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 10px;
+       }
+       .header h1 {
+           margin: 0;
+       }
+       .nav {
+           display: flex;
+           gap: 20px;
+           list-style: none;
+           margin: 0;
+       }
+       .nav a {
+           text-decoration: none;
+           color: #fff;
+           padding: 10px;
+           display: block;
+       }
+       .bmr-calculator {
+           width: 100%;
+           max-width: 400px;
+           margin: 50px auto;
+           background-color: #fff;
+           padding: 10px;
+           border-radius: 10px;
+           box-shadow: 1px 1px 20px #555;
+           box-sizing: border-box;
+       }
+       .bmr-calculator h2 {
+           text-align: center;
+           font-size: 30px;
+           font-weight: 600;
+           margin: -8px -24px 8px;
+           padding: 16px;
+       }
+       .formBmr h3 {
+           font-size: 15px;
+           text-transform: uppercase;
+           margin: 16px 0 10px 0;
+       }
+       .formBmr input[type="text"] {
+           width: 100%;
+           padding: 4px 16px;
+           font-size: 24px;
+           font-weight: bold;
+           border: 1px solid #d5dbdb;
+           box-sizing: border-box;
+       }
+       .formBmr {
+           display: flex;
+           flex-direction: column;
+           gap: 4px;
+       }
+       #female {
+           margin-left: 20px;
+       }
+       .height,
+       .weight {
+           position: relative;
+       }
+       .unit {
+           position: absolute;
+           right: 20px;
+           top: 50px;
+           color:  #777;
+       }
+       .calculate-btn {
+           padding: 8px 24px;
+           margin: 16px 0;
+           font-size: 18px;
+           font-weight: 100;
+           text-transform: uppercase;
+           border: none;
+           background: #333;
+           color: #fff;
+           cursor: pointer;
+           margin-bottom: 32px;
+       }
+       .resultBmr {
+           text-align: center;
+           color: #4e4e4e;
+           font-size: 18px;
+       }
+       .resultBmr .calories {
+           color: green;
+           font-size: 38px;
+           font-weight: 900;
+           margin-right: 8px;
+           vertical-align: middle;
+       }
+       .list-itens {
+           display:flex;
+           list-style: none;
+           gap: 13px;
+           margin: 0;
+           padding: 0;
+       }
+       .list-itens a {
+           text-decoration: none;
+           color: white;
+           padding: 10px;
+       }
+}
+.bmr-calculator .formBmr h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 16px 0 10px 0;
+}
+.bmr-calculator .formBmr input[type="text"]{
+    width: 100%;
+    padding: 4px 16px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid #d5dbdb;
+}
+.bmr-calculator .formBmr {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.bmr-calculator .formBmr  #female{
+    margin-left: 20px;
+}
+.bmr-calculator .formBmr  .height,
+.bmr-calculator .formBmr  .weight{
+    position: relative;
+}
+.bmr-calculator .formBmr  .unit{
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    color:  #777;
+}
+.bmr-calculator .resultBmr .calculate-btn{
+    padding: 8px 24px;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+.bmr-calculator .resultBmr{
+    text-align: center;
+    color: #4e4e4e;
+    font-size: 18px;
+}
+.bmr-calculator .resultBmr .calories{
+    color: green;
+    font-size: 38px;
+    font-weight: 900;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.list-itens{
+    display:flex;
+    list-style: none;
+    gap: 13px;
+}
+
+.list-itens a{
+    text-decoration: none;
+    color: white;
+}
+
+.list-itens a:hover{
+    color:#fccd14;
+    transition: 0.3s all;
+}
+
+.list-itens li{
+transition: transform .2s ease-in;
+}
+
+.list-itens li:hover{
+    transform:scale(1);
+}
+
+
+
+
+
+
+</style>
+<link rel="stylesheet" href="../styles/services.css">
+<link rel="stylesheet" href="../media.css">
+<body>
+   <header>
+      <div class="logo">
+          <a href="../index.html"><img src="../img/logo.png" alt="Logo Luan Pessoa"></a>
+          </div>
+      <nav class="header-menu">
+          <ul class="list-itens">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="services.html"></a></li>
+              <li><a href="contact.html"></a></li>
+              <li><a href="bmr.html"></a></li>
+              <li><a href="bmro.html"></a></li>
+
+
+
+          </ul>
+      </nav>
+
+  </header>
+
+    <div class="bmr-calculator">
+        <h2>احسب سعراتك</h2>
+        <div class="controls">
+            <form class="formBmr">
+                <h3>Age</h3>
+                <input type="text" id="age" value="27">
+                <div class="gender">
+                    <h3>Gender</h3>
+                    <input type="radio" id="male" value="female" name="gender" checked>
+                    <label for="male">Female</label>
+                    <input type="radio" id="male" value="male" name="gender">
+                    <label for="male">Male</label>
+                </div>
+                <div class="height">
+                    <h3>Height</h3>
+                    <input type="text" id="height" value="170">
+                    <div class="unit">cm</div>
+                </div>
+                <div class="weight">
+                    <h3>Weight</h3>
+                    <input type="text" id="weight" value="63">
+                    <div class="unit">kg</div>
+                </div>
+            </form>
+        </div>
+        <div class="resultBmr">
+            <button class="calculate-btn">Calculate</button>
+            <div class="result-message">
+                <span class="calories">1,400 </span>
+                Calories/day
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        const calories = document.querySelector(".bmr-calculator .resultBmr .calories");
+        const calculateBtn = document.querySelector('.bmr-calculator .resultBmr .calculate-btn');
+        const age = document.querySelector('.bmr-calculator .formBmr  #age');
+        const height = document.querySelector('.bmr-calculator .formBmr  #height');
+        const weight = document.querySelector('.bmr-calculator .formBmr  #weight');
+         //BMR = 10*weight + 6.25*height -5*age + 5
+        //BMR = 10*weight + 6.25*height - 5*age -161
+
+        const calculateBMR = (weight,height,age,gender) =>{
+            if(gender == "male"){
+                return 10*weight + 6.25*height -5*age + 5;
+            }
+            return 10*weight + 6.25*height - 5*age -161;
+        };
+        calculateBtn.addEventListener("click", () => {
+            let genderValue = document.querySelector(".bmr-calculator .formBmr input[name='gender']:checked").value;
+            let BMR = calculateBMR(weight.value,height.value,age.value,genderValue);
+
+            calories.innerHTML = BMR.toLocaleString("en-US");
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
