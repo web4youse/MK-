@@ -224,8 +224,15 @@ header {
   }
 
   .list-itens {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
+  }
+
+  .list-itens li {
+    width: 50%;
+    text-align: center;
   }
 
   .logo img {
