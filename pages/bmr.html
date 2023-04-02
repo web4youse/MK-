@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <link rel="stylesheet" href="../index.css">
-  <link rel="stylesheet" href="../contact.css">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +18,9 @@
           <li><a href="../index.html">Home</a></li>
           <li><a href="services.html">Results</a></li>
           <li><a href="contact.html">Schedule</a></li>
-          <li><a href="bmr.html"></a></li>
             <li><a href="bmro.html">BMR</a></li>
+          <li><a href="bmr.html"></a></li>
+        
 
 
       </ul>
@@ -180,56 +180,6 @@
 
                                 <style>
 
-     .header-menu {
-      height: 100px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    .list-itens {
-      display: flex;
-      list-style: none;
-      gap: 13px;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    .list-itens a {
-      text-decoration: none;
-      color: white;
-      padding: 10px;
-    }
-
-    .list-itens a:hover {
-      color: #fccd14;
-      transition: 0.3s all;
-    }
-
-    .list-itens li {
-      transition: transform .2s ease-in;
-    }
-
-    .list-itens li:hover {
-      transform: scale(1);
-    }
-
-    @media (max-width: 767px) {
-      .header-menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-right: 0;
-      }
-      .list-itens {
-        gap: 8px;
-      }
-    }
-
-
 
 
                                 }
@@ -266,6 +216,53 @@
                                             border: 0;
                                             border-bottom: 1px solid #eee;
                                         }
+                                    }
+
+                                    header{
+                                        display:flex;
+                                        justify-content: space-between;
+                                        width: 100%;
+                                        background: #000000;
+                                        padding-top: 30px;
+                                        padding-bottom: 10px;
+                                    }
+
+                                    .logo img{
+                                        width:150px;
+                                        margin-left: 170px;
+                                    }
+
+                                    .header-menu {
+                                        height:100px;
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-around;
+                                        align-items: center;
+                                        padding-right:190px;
+                                    }
+
+                                    .list-itens{
+                                        display:flex;
+                                        list-style: none;
+                                        gap: 13px;
+                                    }
+
+                                    .list-itens a{
+                                        text-decoration: none;
+                                        color: white;
+                                    }
+
+                                    .list-itens a:hover{
+                                        color:#fccd14;
+                                        transition: 0.3s all;
+                                    }
+
+                                    .list-itens li{
+                                    transition: transform .2s ease-in;
+                                    }
+
+                                    .list-itens li:hover{
+                                        transform:scale(1);
                                     }
 
                                     #calculator-h3 {
@@ -402,6 +399,10 @@
                                         ::placeholder {
                                             font-size: 15px;
                                         }
+
+
+
+                                        }
                                     }
                                   </style>
                                 </body>
@@ -416,4 +417,5 @@
 
 
                               </html>
+
 
