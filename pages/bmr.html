@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          
 
-    <title>MK Hamza BMR</title>
+
+    <title>MK Hamza BMR</title
 </head>
 
 
@@ -22,7 +22,7 @@
           <li><a href="contact.html">Schedule</a></li>
             <li><a href="bmro.html">BMR</a></li>
           <li><a href="bmr.html"></a></li>
-        
+
 
 
       </ul>
@@ -218,8 +218,55 @@
                                             border: 0;
                                             border-bottom: 1px solid #eee;
                                         }
-                                    
-                            
+                                    }
+
+                                    header{
+                                        display:flex;
+                                        justify-content: space-between;
+                                        width: 100%;
+                                        background: #000000;
+                                        padding-top: 30px;
+                                        padding-bottom: 10px;
+                                    }
+
+                                    .logo img{
+                                        width:150px;
+                                        margin-left: 170px;
+                                    }
+
+                                    .header-menu {
+                                        height:100px;
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-around;
+                                        align-items: center;
+                                        padding-right:190px;
+                                    }
+
+                                    .list-itens{
+                                        display:flex;
+                                        list-style: none;
+                                        gap: 13px;
+                                    }
+
+                                    .list-itens a{
+                                        text-decoration: none;
+                                        color: white;
+                                    }
+
+                                    .list-itens a:hover{
+                                        color:#fccd14;
+                                        transition: 0.3s all;
+                                    }
+
+                                    .list-itens li{
+                                    transition: transform .2s ease-in;
+                                    }
+
+                                    .list-itens li:hover{
+                                        transform:scale(1);
+                                    }
+
                                     #calculator-h3 {
                                         font-size: 20px;
                                         font-weight: 500;
@@ -353,31 +400,9 @@
                                         }
                                         ::placeholder {
                                             font-size: 15px;
-                                            
-                                            @media screen and (max-width: 760px){
+                                        }
 
-/*HEADER MOBILE*/
 
-header{
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    }
-
-    .logo img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:50vw;
-    margin: 0 auto;
-}
-
-    .header-menu {
-        padding-right:0px;
-    }
-                                      
 
                                         }
                                     }
